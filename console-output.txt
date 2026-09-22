@@ -1,0 +1,174 @@
+i-03a9a7f388644988f	[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01H[0m[35m[40m[2J[01;01H[=3h[2J[01;01H[0m[37m[40m  Booting `Amazon Linux (6.18.48-109.150.amzn2023.x86_64) 2023'
+
+[    4.421799] systemd[1]: Finished systemd-remount-fs.service - Remount Root and Kernel File Systems.
+[    4.423224] systemd[1]: systemd-firstboot.service - First Boot Wizard was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+[    4.437737] fuse: init (API version 7.45)
+[    4.446284] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    4.447894] device-mapper: uevent: version 1.0.3
+[    4.448670] device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+[    4.452340] systemd[1]: systemd-hwdb-update.service - Rebuild Hardware Database was skipped because of an unmet condition check (ConditionNeedsUpdate=/etc).
+[    4.454301] systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival was skipped because of an unmet condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+[    4.493945] systemd[1]: Starting systemd-random-seed.service - Load/Save Random Seed...
+[    4.495119] systemd[1]: systemd-sysusers.service - Create System Users was skipped because no trigger condition checks were met.
+[    4.498166] systemd[1]: Starting systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev...
+[    4.499980] systemd[1]: Started systemd-journald.service - Journal Service.
+[    4.545090] systemd-journald[1105]: Received client request to flush runtime journal.
+[    5.156557] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    5.195450] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[    5.196668] i8042: Warning: Keylock active
+[    5.198759] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    5.199315] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    5.202856] ACPI: button: Power Button [PWRF]
+[    5.203929] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[    5.205300] ACPI: button: Sleep Button [SLPF]
+[    5.258345] ena 0000:00:05.0: Elastic Network Adapter (ENA) v2.17.2g
+[    5.269827] ena 0000:00:05.0: ENA device version: 0.10
+[    5.270459] ena 0000:00:05.0: ENA controller version: 0.0.1 implementation version 1
+[    5.351821] ena 0000:00:05.0: LLQ is not supported Fallback to host mode policy.
+[    5.365987] ena 0000:00:05.0: Elastic Network Adapter (ENA) found at mem 80400000, mac addr 02:ff:df:3c:2c:2f
+[    5.438968] ena 0000:00:05.0 ens5: renamed from eth0
+[    5.654128] zram_generator::config[1658]: zram0: system has too much memory (913MB), limit is 800MB, ignoring.
+[    6.037572] nvme nvme0: using unchecked data buffer
+[    8.382527] cloud-init[1802]: Cloud-init v. 22.2.2 running 'init' at Tue, 22 Sep 2026 05:29:46 +0000. Up 8.35 seconds.
+[    8.461029] cloud-init[1802]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+[    8.463316] cloud-init[1802]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+[    8.465372] cloud-init[1802]: ci-info: | Device |  Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+[    8.467360] cloud-init[1802]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+[    8.469524] cloud-init[1802]: ci-info: |  ens5  | True |         10.0.1.13          | 255.255.255.0 | global | 02:ff:df:3c:2c:2f |
+[    8.471533] cloud-init[1802]: ci-info: |  ens5  | True | fe80::ff:dfff:fe3c:2c2f/64 |       .       |  link  | 02:ff:df:3c:2c:2f |
+[    8.473517] cloud-init[1802]: ci-info: |   lo   | True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+[    8.475426] cloud-init[1802]: ci-info: |   lo   | True |          ::1/128           |       .       |  host  |         .         |
+[    8.477402] cloud-init[1802]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+[    8.479298] cloud-init[1802]: ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
+[    8.480945] cloud-init[1802]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+[    8.482614] cloud-init[1802]: ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
+[    8.484251] cloud-init[1802]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+[    8.485884] cloud-init[1802]: ci-info: |   0   |   0.0.0.0   | 10.0.1.1 |     0.0.0.0     |    ens5   |   UG  |
+[    8.487537] cloud-init[1802]: ci-info: |   1   |   10.0.0.2  | 10.0.1.1 | 255.255.255.255 |    ens5   |  UGH  |
+[    8.489171] cloud-init[1802]: ci-info: |   2   |   10.0.1.0  | 0.0.0.0  |  255.255.255.0  |    ens5   |   U   |
+[    8.490820] cloud-init[1802]: ci-info: |   3   |   10.0.1.1  | 0.0.0.0  | 255.255.255.255 |    ens5   |   UH  |
+[    8.492481] cloud-init[1802]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+[    8.494117] cloud-init[1802]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+[    8.495512] cloud-init[1802]: ci-info: +-------+-------------+---------+-----------+-------+
+[    8.496906] cloud-init[1802]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+[    8.498305] cloud-init[1802]: ci-info: +-------+-------------+---------+-----------+-------+
+[    8.499721] cloud-init[1802]: ci-info: |   0   |  fe80::/64  |    ::   |    ens5   |   U   |
+[    8.501128] cloud-init[1802]: ci-info: |   2   |    local    |    ::   |    ens5   |   U   |
+[    8.502520] cloud-init[1802]: ci-info: |   3   |  multicast  |    ::   |    ens5   |   U   |
+[    8.503906] cloud-init[1802]: ci-info: +-------+-------------+---------+-----------+-------+
+[    9.491390] cloud-init[1802]: Generating public/private ed25519 key pair.
+[    9.493045] cloud-init[1802]: Your identification has been saved in /etc/ssh/ssh_host_ed25519_key
+[    9.494717] cloud-init[1802]: Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub
+[    9.496396] cloud-init[1802]: The key fingerprint is:
+[    9.497390] cloud-init[1802]: SHA256:71cu9O3aQS1HzMlMKwHnQPz/mUEV9daohLK5sRtRyiM root@ip-10-0-1-13.ec2.internal
+[    9.499107] cloud-init[1802]: The key's randomart image is:
+[    9.500138] cloud-init[1802]: +--[ED25519 256]--+
+[    9.501082] cloud-init[1802]: |          o+.o o+|
+[    9.501958] cloud-init[1802]: |           o+ =+*|
+[    9.502818] cloud-init[1802]: |        . o oo.=O|
+[    9.503683] cloud-init[1802]: |       . * . o.+.|
+[    9.504550] cloud-init[1802]: |      E S   . +.o|
+[    9.505403] cloud-init[1802]: |       . B  . o= |
+[    9.506254] cloud-init[1802]: |        + .. + o=|
+[    9.507117] cloud-init[1802]: |         +  o o++|
+[    9.507981] cloud-init[1802]: |        . .. ..oo|
+[    9.508963] cloud-init[1802]: +----[SHA256]-----+
+[    9.509866] cloud-init[1802]: Generating public/private ecdsa key pair.
+[    9.511115] cloud-init[1802]: Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key
+[    9.512676] cloud-init[1802]: Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub
+[    9.514187] cloud-init[1802]: The key fingerprint is:
+[    9.515090] cloud-init[1802]: SHA256:W2UDKeOb6zyOEn1Bz2fUxlD9pjmHZlB+4QqYfu7B17c root@ip-10-0-1-13.ec2.internal
+[    9.516786] cloud-init[1802]: The key's randomart image is:
+[    9.517789] cloud-init[1802]: +---[ECDSA 256]---+
+[    9.518643] cloud-init[1802]: |          ...=.. |
+[    9.519514] cloud-init[1802]: |        + ... =..|
+[    9.520496] cloud-init[1802]: |       o =o.++. o|
+[    9.521390] cloud-init[1802]: |        ooo++...+|
+[    9.522293] cloud-init[1802]: |     .  S+.o...* |
+[    9.523175] cloud-init[1802]: |    . . ++.. .O .|
+[    9.524049] cloud-init[1802]: |     . ...oo + +.|
+[    9.525014] cloud-init[1802]: |    .  oo  .o   o|
+[    9.525879] cloud-init[1802]: |     ..o+...   E |
+[    9.526747] cloud-init[1802]: +----[SHA256]-----+
+[    9.962382] cloud-init[1882]: Cloud-init v. 22.2.2 running 'modules:config' at Tue, 22 Sep 2026 05:29:48 +0000. Up 9.90 seconds.
+[   10.349804] cloud-init[1887]: Cloud-init v. 22.2.2 running 'modules:final' at Tue, 22 Sep 2026 05:29:48 +0000. Up 10.29 seconds.
+[   12.854175] cloud-init[1887]: Amazon Linux 2023 repository                     69 MB/s |  80 MB     00:01
+
+Amazon Linux 2023.12.20260918
+Kernel 6.18.48-109.150.amzn2023.x86_64 on an x86_64 (-)
+
+ip-10-0-1-13 login: [   34.214188] cloud-init[1887]: Amazon Linux 2023 Kernel Livepatch repository   758 kB/s |  82 kB     00:00
+[   36.121563] cloud-init[1887]: Dependencies resolved.
+[   36.187166] cloud-init[1887]: ================================================================================
+[   36.189019] cloud-init[1887]:  Package               Arch     Version                     Repository     Size
+[   36.190774] cloud-init[1887]: ================================================================================
+[   36.192364] cloud-init[1887]: Installing:
+[   36.193068] cloud-init[1887]:  nginx                 x86_64   1:1.30.4-1.amzn2023.0.1     amazonlinux    34 k
+[   36.194671] cloud-init[1887]: Installing dependencies:
+[   36.195555] cloud-init[1887]:  generic-logos-httpd   noarch   18.0.0-12.amzn2023.0.3      amazonlinux    19 k
+[   36.197294] cloud-init[1887]:  gperftools-libs       x86_64   2.9.1-1.amzn2023.0.3        amazonlinux   308 k
+[   36.198981] cloud-init[1887]:  libunwind             x86_64   1.4.0-5.amzn2023.0.3        amazonlinux    66 k
+[   36.200670] cloud-init[1887]:  nginx-core            x86_64   1:1.30.4-1.amzn2023.0.1     amazonlinux   711 k
+[   36.202367] cloud-init[1887]:  nginx-filesystem      noarch   1:1.30.4-1.amzn2023.0.1     amazonlinux    10 k
+[   36.204021] cloud-init[1887]:  nginx-mimetypes       noarch   2.1.49-3.amzn2023.0.3       amazonlinux    21 k
+[   36.205672] cloud-init[1887]: Transaction Summary
+[   36.206502] cloud-init[1887]: ================================================================================
+[   36.208120] cloud-init[1887]: Install  7 Packages
+[   36.208948] cloud-init[1887]: Total download size: 1.1 M
+[   36.209850] cloud-init[1887]: Installed size: 3.8 M
+[   36.210668] cloud-init[1887]: Downloading Packages:
+[   36.267950] cloud-init[1887]: (1/7): generic-logos-httpd-18.0.0-12.amzn2023.0 874 kB/s |  19 kB     00:00
+[   36.275456] cloud-init[1887]: (2/7): libunwind-1.4.0-5.amzn2023.0.3.x86_64.rp 2.4 MB/s |  66 kB     00:00
+[   36.296910] cloud-init[1887]: (3/7): gperftools-libs-2.9.1-1.amzn2023.0.3.x86 6.2 MB/s | 308 kB     00:00
+[   36.299333] cloud-init[1887]: (4/7): nginx-1.30.4-1.amzn2023.0.1.x86_64.rpm   1.1 MB/s |  34 kB     00:00
+[   36.307580] cloud-init[1887]: (5/7): nginx-core-1.30.4-1.amzn2023.0.1.x86_64.  22 MB/s | 711 kB     00:00
+[   36.321979] cloud-init[1887]: (6/7): nginx-filesystem-1.30.4-1.amzn2023.0.1.n 432 kB/s |  10 kB     00:00
+[   36.325244] cloud-init[1887]: (7/7): nginx-mimetypes-2.1.49-3.amzn2023.0.3.no 833 kB/s |  21 kB     00:00
+[   36.328671] cloud-init[1887]: --------------------------------------------------------------------------------
+[   36.330608] cloud-init[1887]: Total                                           8.2 MB/s | 1.1 MB     00:00
+[   36.453937] cloud-init[1887]: Running transaction check
+[   36.483511] cloud-init[1887]: Transaction check succeeded.
+[   36.484653] cloud-init[1887]: Running transaction test
+[   36.629050] cloud-init[1887]: Transaction test succeeded.
+[   36.630370] cloud-init[1887]: Running transaction
+[   36.721004] cloud-init[1887]:   Preparing        :                                                        1/1
+[   36.812336] cloud-init[1887]:   Running scriptlet: nginx-filesystem-1:1.30.4-1.amzn2023.0.1.noarch        1/7
+[   36.834289] cloud-init[1887]:   Installing       : nginx-filesystem-1:1.30.4-1.amzn2023.0.1.noarch        1/7
+[   36.845943] cloud-init[1887]:   Installing       : nginx-mimetypes-2.1.49-3.amzn2023.0.3.noarch           2/7
+[   36.866480] cloud-init[1887]:   Installing       : libunwind-1.4.0-5.amzn2023.0.3.x86_64                  3/7
+[   36.895146] cloud-init[1887]:   Installing       : gperftools-libs-2.9.1-1.amzn2023.0.3.x86_64            4/7
+[   36.909713] cloud-init[1887]:   Installing       : nginx-core-1:1.30.4-1.amzn2023.0.1.x86_64              5/7
+[   36.923840] cloud-init[1887]:   Installing       : generic-logos-httpd-18.0.0-12.amzn2023.0.3.noarch      6/7
+[   36.927982] cloud-init[1887]:   Installing       : nginx-1:1.30.4-1.amzn2023.0.1.x86_64                   7/7
+[   36.454803] zram_generator::config[2158]: zram0: system has too much memory (913MB), limit is 800MB, ignoring.
+[   37.731125] cloud-init[1887]:   Running scriptlet: nginx-1:1.30.4-1.amzn2023.0.1.x86_64                   7/7
+[   37.731395] cloud-init[1887]:   Verifying        : generic-logos-httpd-18.0.0-12.amzn2023.0.3.noarch      1/7
+[   37.731552] cloud-init[1887]:   Verifying        : gperftools-libs-2.9.1-1.amzn2023.0.3.x86_64            2/7
+[   37.731757] cloud-init[1887]:   Verifying        : libunwind-1.4.0-5.amzn2023.0.3.x86_64                  3/7
+[   37.732174] cloud-init[1887]:   Verifying        : nginx-1:1.30.4-1.amzn2023.0.1.x86_64                   4/7
+[   37.732374] cloud-init[1887]:   Verifying        : nginx-core-1:1.30.4-1.amzn2023.0.1.x86_64              5/7
+[   37.732577] cloud-init[1887]:   Verifying        : nginx-filesystem-1:1.30.4-1.amzn2023.0.1.noarch        6/7
+[   38.217628] cloud-init[1887]:   Verifying        : nginx-mimetypes-2.1.49-3.amzn2023.0.3.noarch           7/7
+[   38.219368] cloud-init[1887]: Installed:
+[   38.220143] cloud-init[1887]:   generic-logos-httpd-18.0.0-12.amzn2023.0.3.noarch
+[   38.222129] cloud-init[1887]:   gperftools-libs-2.9.1-1.amzn2023.0.3.x86_64
+[   38.222236] cloud-init[1887]:   libunwind-1.4.0-5.amzn2023.0.3.x86_64
+[   38.222268] cloud-init[1887]:   nginx-1:1.30.4-1.amzn2023.0.1.x86_64
+[   38.226381] cloud-init[1887]:   nginx-core-1:1.30.4-1.amzn2023.0.1.x86_64
+[   38.227494] cloud-init[1887]:   nginx-filesystem-1:1.30.4-1.amzn2023.0.1.noarch
+[   38.228709] cloud-init[1887]:   nginx-mimetypes-2.1.49-3.amzn2023.0.3.noarch
+[   38.229861] cloud-init[1887]: Complete!
+[   38.701807] cloud-init[1887]: <h1>Hello from Terraform!</h1>
+ci-info: no authorized SSH keys fingerprints found for user ec2-user.
+<14>Sep 22 05:30:16 cloud-init: #############################################################
+<14>Sep 22 05:30:16 cloud-init: -----BEGIN SSH HOST KEY FINGERPRINTS-----
+<14>Sep 22 05:30:16 cloud-init: 256 SHA256:W2UDKeOb6zyOEn1Bz2fUxlD9pjmHZlB+4QqYfu7B17c root@ip-10-0-1-13.ec2.internal (ECDSA)
+<14>Sep 22 05:30:17 cloud-init: 256 SHA256:71cu9O3aQS1HzMlMKwHnQPz/mUEV9daohLK5sRtRyiM root@ip-10-0-1-13.ec2.internal (ED25519)
+<14>Sep 22 05:30:17 cloud-init: -----END SSH HOST KEY FINGERPRINTS-----
+<14>Sep 22 05:30:17 cloud-init: #############################################################
+-----BEGIN SSH HOST KEY KEYS-----
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGcBSDINFfyyN9XctrqzSaoWtqTQI4Ag1Sfy73bHMsSXS7V9JUa+EE0CXoq+ulGUTIvuT9FLwO/v4Rr7/4m4EoU= root@ip-10-0-1-13.ec2.internal
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMB83J13V0hISYme90DhK+46w8Ew7XYATds4JZCTCGEe root@ip-10-0-1-13.ec2.internal
+-----END SSH HOST KEY KEYS-----
+[   38.789360] cloud-init[1887]: Cloud-init v. 22.2.2 finished at Tue, 22 Sep 2026 05:30:17 +0000. Datasource DataSourceEc2.  Up 38.78 seconds
+	2026-09-22T05:36:53+00:00
